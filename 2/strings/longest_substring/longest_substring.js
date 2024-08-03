@@ -6,7 +6,7 @@ const longestSubstring = str => {
 	let index = {};
 
 	for (let i = 0; i < str.length; i++) {
-		if (!index[str[i]]) {
+		if (index[str[i]] != undefined) {
 			index[str[i]] = i;
 		} else {
 			if (index[str[i]] + 1 > s) {
